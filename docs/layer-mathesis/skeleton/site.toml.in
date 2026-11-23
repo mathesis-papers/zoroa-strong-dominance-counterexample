@@ -1,0 +1,14 @@
+[site]
+repo = {{REPOSITORY}}
+base_url = {{SITE_BASE}}
+post_build = {{SITE_POST_BUILD}}
+languages = ["zh", "en"]
+[site.title]
+zh = {{TITLE_ZH}}
+en = {{TITLE_EN}}
+[trureturing]
+repo = "the-omega-institute/trureturing"
+branch = "dev"
+[books]
+order = [{{SLUG}}]
+hide = []
