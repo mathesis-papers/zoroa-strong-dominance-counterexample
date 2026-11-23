@@ -28,9 +28,9 @@
         "name": "Wenlin Zhang"
       }
     ],
-    "concept_doi": null,
+    "concept_doi": "10.5281/zenodo.24477883",
     "current_version": 3,
-    "doi": null,
+    "doi": "10.5281/zenodo.24477884",
     "lean_source": {
       "revision": "ad59550e53d607f9e9dbd8110a79414c46e97f7e",
       "url": "https://github.com/the-omega-institute/trureturing/blob/ad59550e53d607f9e9dbd8110a79414c46e97f7e/D5/S3/Analytic/Probability/StrongDominanceRefutation.lean"
