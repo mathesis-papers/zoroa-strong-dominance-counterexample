@@ -1,0 +1,15 @@
+{
+  "id": "zoroa-strong-dominance-counterexample",
+  "revision": 3,
+  "problem_ids": ["op-zlfzc1608dom"],
+  "topic": "Single-crossing stochastic dominance for distinct-label counts under majorization",
+  "title": "Counterexamples to Zoroa et al.'s strong-dominance conjecture for every number of draws above four",
+  "creators": [
+    {"name": "Haobo Ma", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Wenlin Zhang", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "abstract": "We refute the strong-dominance conjecture of Zoroa, Lesigne, Fernández-Sáez, Zoroa and Casas (arXiv:1608.00155v1, Section 8, Conjecture, page 30) for every number of labels N≥4 and every number of independent draws n≥5, with strictly positive rational coupon probabilities. For n=5 and p=(48,48,2,2)/100 and q=(50,46,3,1)/100, one has p≺q, but the probability mass under p is larger at two distinct labels and smaller at three distinct labels. These two inequalities exclude every real single-crossing threshold. The obstruction persists along a rational one-parameter family on a full real interval. A Taylor estimate extends it to every number of draws n≥5, and adding sufficiently rare labels gives strictly positive counterexamples in every dimension N≥4. The cumulative distributions retain the usual stochastic order. On supports of at most three distinct counts, that order implies the conjectured conclusion.",
+  "summary": "Strictly positive rational counterexamples exist for every N≥4 and n≥5. An explicit Taylor bound extends the four-label obstruction to all draw counts above four; a coupling preserves the signs when rare labels are added. Ordinary stochastic order remains valid, and supports of at most three distinct counts satisfy single crossing.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/ad59550e53d607f9e9dbd8110a79414c46e97f7e/D5/S3/Analytic/Probability/StrongDominanceRefutation.lean"
+}

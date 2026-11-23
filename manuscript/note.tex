@@ -1,0 +1,368 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\usepackage{xurl}
+\hypersetup{
+pdftitle={Counterexamples to Zoroa et al.'s strong-dominance conjecture for every number of draws above four},
+pdfauthor={Haobo Ma; Wenlin Zhang},
+pdfsubject={Coupon collection and majorization; CC BY 4.0},
+pdfkeywords={coupon collector, stochastic dominance, majorization, counterexample}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\Prob}{\mathbb P}
+\title{Counterexamples to Zoroa et al.'s strong-dominance conjecture\ for every number of draws above four}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\\small ChronoAI Pte Ltd, Singapore}
+\date{November 19, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We refute the strong-dominance conjecture of Zoroa, Lesigne,
+Fern\'andez-S\'aez, Zoroa and Casas \cite[\S8, Conjecture, p.~30,
+arXiv:1608.00155v1]{zoroa} for every number of labels $N\geq4$ and every
+number of independent draws $n\geq5$, with strictly positive rational
+coupon probabilities. For $n=5$ and
+$p=(48,48,2,2)/100$ and $q=(50,46,3,1)/100$, one has $p\prec q$, but the
+probability mass under $p$ is larger at two distinct labels and smaller at
+three distinct labels. These two inequalities exclude every real
+single-crossing threshold. The obstruction persists along a rational
+one-parameter family on a full real interval. A Taylor estimate extends it
+to every number of draws $n\geq5$, and adding sufficiently rare labels
+gives strictly positive counterexamples in every dimension $N\geq4$.
+The cumulative distributions retain the usual stochastic order. On
+supports of at most three distinct counts, that order implies the
+conjectured conclusion.
+\end{abstract}
+
+\section{The conjecture}
+Let $N,n\geq1$ be integers and let $r=(r_1,\ldots,r_N)$ be a probability
+vector. Draw $n$ labels independently from $\{1,\ldots,N\}$ with
+probabilities $r_i$, and let $Y_n$ count the distinct labels observed.
+Write $a_r(k)=\Prob_r(Y_n=k)$ for $k\geq0$.
+For two probability vectors, $p\prec q$ means that their decreasing
+rearrangements satisfy
+\[
+ \sum_{i=1}^j p_i^{\downarrow}\leq\sum_{i=1}^j q_i^{\downarrow}
+ \quad(1\leq j<N),\qquad
+ \sum_{i=1}^N p_i=\sum_{i=1}^N q_i=1.
+\]
+The definition of strong stochastic dominance in
+\cite[Definition~8.2, pp.~28, 30]{zoroa} requires a real $c$ such that
+\begin{equation}\label{eq:crossing}
+ a_p(k)\leq a_q(k)\quad(k\leq c),\qquad
+ a_p(k)\geq a_q(k)\quad(k>c).
+\end{equation}
+The conjecture states that $p\prec q$ implies \eqref{eq:crossing}.
+In the published version these are Definition~7.2 and the conjecture
+in \S7; the version-specific locators above refer to the arXiv source.
+Here ``strong'' refers to this single-crossing condition, not merely to
+the usual stochastic order
+$\Prob_p(Y_n\leq k)\leq\Prob_q(Y_n\leq k)$.
+The latter was already proved by Wong and Yue
+\cite[pp.~391--398]{wongyue}, as explicitly credited in
+\cite[Remark~6.1, pp.~25--26]{zoroa}; see also
+\cite[Corollary~6.1, p.~25]{zoroa}.
+For related pairwise-mixing inequalities for collection times, see
+\cite[Theorem~1]{anceaume}. Lesigne's later exposition
+\cite[\S4, p.~5; \S7, Proposition~1]{lesigne} presents the cumulative
+comparison and the inclusion--exclusion mass law. The distinction matters: an order of
+cumulative probabilities need not give an order of the individual masses
+on each side of one threshold.
+
+\section{Four labels and five draws}
+\begin{theorem}\label{thm:counterexample}
+For $N=4$, $n=5$ and
+\[
+ p=\frac1{100}(48,48,2,2),\qquad
+ q=\frac1{100}(50,46,3,1),
+\]
+all coordinates are positive and $p\prec q$, but
+\eqref{eq:crossing} fails for every $c\in\mathbb R$.
+\end{theorem}
+\begin{proof}
+Both vectors are decreasing and their coordinate sums are one. Their
+prefix sums, multiplied by $100$, are respectively
+\[
+ (48,96,98,100),\qquad(50,96,99,100),
+\]
+so $p\prec q$.
+
+We compute the masses without approximation. For $r\in\mathbb R^4$ with
+nonnegative coordinates summing to one, put
+\[
+ S_j(r)=\sum_{\substack{A\subseteq\{1,2,3,4\}\\|A|=j}}
+              \left(\sum_{i\in A}r_i\right)^5
+ \qquad(1\leq j\leq3).
+\]
+The event that the set of observed labels is exactly a fixed set $A$
+has probability
+\begin{equation}\label{eq:ie}
+ \sum_{B\subseteq A}(-1)^{|A|-|B|}
+                 \left(\sum_{i\in B}r_i\right)^5.
+\end{equation}
+Indeed, the fifth power is the probability that every draw lies in $B$;
+inclusion--exclusion removes the events in which a label of $A$ is absent.
+The empty-set term is zero because there are five draws. Summing
+\eqref{eq:ie} over sets $A$ of a fixed size gives
+\begin{align*}
+ a_r(1)&=S_1(r),\\
+ a_r(2)&=S_2(r)-3S_1(r),\\
+ a_r(3)&=S_3(r)-2S_2(r)+3S_1(r),\\
+ a_r(4)&=1-a_r(1)-a_r(2)-a_r(3).
+\end{align*}
+For example, each singleton lies in three pairs, each pair in two triples,
+and each singleton in three triples; these counts give the coefficients.
+The required integer sums are
+\[
+\begin{array}{c|rrr}
+ &100^5S_1&100^5S_2&100^5S_3\\\hline
+ p&509\,608\,000&9\,403\,728\,000&18\,838\,824\,000\\
+ q&518\,463\,220&9\,428\,769\,000&18\,868\,905\,780
+\end{array}
+\]
+and hence the full mass functions have the following numerators over the
+common denominator $100^5=10^{10}$:
+\begin{center}
+\begin{tabular}{crrr}
+\toprule
+$k$ & $100^5a_p(k)$ & $100^5a_q(k)$ & $100^5(a_p(k)-a_q(k))$\\
+\midrule
+1 & $509\,608\,000$ & $518\,463\,220$ & $-8\,855\,220$\\
+2 & $7\,874\,904\,000$ & $7\,873\,379\,340$ & $1\,524\,660$\\
+3 & $1\,560\,192\,000$ & $1\,566\,757\,440$ & $-6\,565\,440$\\
+4 & $55\,296\,000$ & $41\,400\,000$ & $13\,896\,000$\\
+\bottomrule
+\end{tabular}
+\end{center}
+For $k=0$ or $k>4$ both masses vanish. In particular, $a_p(2)>a_q(2)$.
+If a threshold $c$ existed, the lower inequality in
+\eqref{eq:crossing} would force $c<2$. Then $3>c$ would require
+$a_p(3)\geq a_q(3)$, contrary to the third row. This proves the theorem.
+\end{proof}
+
+The cumulative differences, multiplied by $100^5$, are
+$-8\,855\,220$, $-7\,330\,560$, $-13\,896\,000$, and $0$ at
+$k=1,2,3,4$. Thus this example retains ordinary stochastic dominance;
+it separates that order from the source's stronger single-crossing condition.
+
+\begin{corollary}\label{cor:family}
+For every real $0<t\leq1/100$, the positive probability vectors
+\[
+ p_t=(1/2-2t,1/2-2t,2t,2t),\qquad
+ q_t=(1/2,1/2-4t,3t,t)
+\]
+satisfy $p_t\prec q_t$ and fail \eqref{eq:crossing} after five draws.
+\end{corollary}
+\begin{proof}
+Both vectors are decreasing on this interval, and their prefix sums are
+\[
+ (1/2-2t,1-4t,1-2t,1),\qquad(1/2,1-4t,1-t,1).
+\]
+This proves majorization; all coordinates are positive.
+Substituting in the formulas for $S_j$ gives the exact differences
+\begin{align*}
+ a_{p_t}(2)-a_{q_t}(2)&=t^2(5-360t+1270t^2-2340t^3),\\
+ a_{p_t}(3)-a_{q_t}(3)&=t^2(-10+360t-1670t^2+1560t^3).
+\end{align*}
+The first bracket is at least
+$5-360/100-2340/100^3=69883/50000>0$.
+The second is at most
+$-10+360/100+1560/100^3=-159961/25000<0$.
+As $t^2>0$, the same threshold contradiction applies. At $t=1/100$ these
+vectors equal those of Theorem~\ref{thm:counterexample}; at the excluded
+endpoint $t=0$ they coincide.
+\end{proof}
+
+\section{Every number of draws above four}
+The family in Corollary~\ref{cor:family} also explains why the obstruction
+is not confined to five draws. In this section $a_r(k)$ denotes the mass
+after $n$ draws, and $S_j(r;n)$ is the subset sum in the preceding proof
+with exponent $n$ in place of $5$.
+
+\begin{theorem}\label{thm:alln}
+For every integer $n\geq5$ and every real
+$0<t\leq (100n2^n)^{-1}$, the strictly positive four-coordinate vectors
+$p_t,q_t$ of Corollary~\ref{cor:family} satisfy $p_t\prec q_t$ and
+\[
+ a_{p_t}(2)-a_{q_t}(2)>0,\qquad
+ a_{p_t}(3)-a_{q_t}(3)<0.
+\]
+In particular they fail the single-crossing condition after $n$ draws.
+\end{theorem}
+\begin{proof}
+The prefix inequalities in Corollary~\ref{cor:family} hold for
+$0<t\leq1/14$, which contains the interval in the theorem.
+Put $G_j(t)=S_j(p_t;n)-S_j(q_t;n)$ and
+\[
+ F_2(t)=G_2(t)-3G_1(t),\qquad
+ F_3(t)=G_3(t)-2G_2(t)+3G_1(t).
+\]
+Inclusion--exclusion identifies these with the two mass differences.
+Every term of $G_j$ is a signed power $(b+st)^n$, where the base $b$
+is $0$, $1/2$ or $1$. The constant and linear coefficients of each
+$G_j$ vanish. Write $[t^2]G_j$ for the coefficient of $t^2$ in $G_j$.
+With $C=\binom n2$ and $x=2^{2-n}$, their quadratic
+coefficients and the sums of absolute cubes of their slopes are
+\[
+\begin{array}{c|rr}
+ & [t^2]G_j & \sum |s|^3\\\hline
+G_1&-8Cx&124\\
+G_2&-20Cx&312\\
+G_3&C(-8x-2)&124
+\end{array}
+\]
+Here the last column includes terms from both vectors. To see the first
+row, the slopes on the two coordinates of base $1/2$ are $-2,-2$
+for $p_t$ and $0,-4$ for $q_t$, whose squared-slope difference is $-8$.
+For pairs of base $1/2$, the four slopes are all zero for $p_t$, and
+$3,1,-1,-3$ for $q_t$, giving $-20$. For triples the squared-slope
+differences are $-8$ at base $1/2$ and $-2$ at base $1$.
+Terms of base zero have no quadratic contribution since $n\geq5$.
+Thus
+\begin{align}
+ F_2(t)&=n(n-1)2^{3-n}t^2+R_2(t),\label{eq:alln2}\\
+ F_3(t)&=n(n-1)(2^{4-n}-1)t^2+R_3(t).\label{eq:alln3}
+\end{align}
+All subset probabilities lie in $[0,1]$ for $0\leq t\leq1/14$.
+The third derivative of $(b+st)^n$ therefore has absolute value at
+most $n(n-1)(n-2)|s|^3$. Taylor's theorem gives
+\[
+ |R_2(t)|\leq114n(n-1)(n-2)t^3,\qquad
+ |R_3(t)|\leq\frac{560}{3}n(n-1)(n-2)t^3,
+\]
+because $(312+3\cdot124)/6=114$ and
+$(124+2\cdot312+3\cdot124)/6=560/3$.
+Since $(n-2)t\leq 2^{-n}/100$ and $n\geq5$, these estimates yield
+\begin{align*}
+ F_2(t)&\geq \frac{343}{50}n(n-1)2^{-n}t^2>0,\\
+ F_3(t)&\leq n(n-1)t^2\left(-\frac12+\frac7{120}\right)
+          =-\frac{53}{120}n(n-1)t^2<0.
+\end{align*}
+The positive difference at two forces a proposed threshold below two,
+and the negative difference at three then contradicts its upper side.
+\end{proof}
+
+\begin{corollary}\label{cor:allN}
+For every pair of integers $N\geq4$ and $n\geq5$, there are strictly
+positive rational probability vectors $p\prec q$ on $N$ labels for which
+the single-crossing condition fails after $n$ draws.
+\end{corollary}
+\begin{proof}
+For $N=4$, take $t=(100n2^n)^{-1}$ in Theorem~\ref{thm:alln}.
+For $M=N-4>0$, use the same $t$ and put
+\[
+ m=n(n-1)2^{-n}t^2,\qquad
+ \delta=\min\{m/(4n),Mt/4,1/4\}.
+\]
+Multiply the four coordinates of each vector by $1-\delta$ and
+append $M$ coordinates equal to $\delta/M$. All coordinates are
+positive rational numbers. Since $\delta/M\leq t/4$ and
+$(1-\delta)t\geq3t/4$, the appended coordinates are no larger than
+the original four. The first four prefix comparisons are just the
+old comparisons scaled by $1-\delta$; all subsequent prefixes agree.
+Hence majorization is preserved.
+
+Couple a draw from the enlarged vector with a draw from its original
+four-coordinate vector: with probability $1-\delta$ use the same
+original label, and otherwise use one of the appended labels.
+For $n$ draws the probability that any appended label occurs is at
+most $n\delta$. Consequently each mass changes by at most $n\delta$,
+and each difference of two masses changes by at most $2n\delta\leq m/2$.
+The estimates in Theorem~\ref{thm:alln} give $F_2(t)\geq m$ and
+$F_3(t)\leq-m$, so their opposite signs persist.
+\end{proof}
+
+\section{Small supports and coverage}
+\begin{lemma}\label{lem:three}
+For distributions supported on $\{1,2,3\}$, ordinary stochastic
+dominance implies the single-crossing condition \eqref{eq:crossing}.
+Consequently, for coupon collection, the conjectured conclusion holds
+whenever $\min(N,n)\leq3$ and $p\prec q$.
+\end{lemma}
+\begin{proof}
+Let $d_k=a_p(k)-a_q(k)$. The cumulative inequalities give
+$d_1\leq0$ and $d_1+d_2\leq0$; equality of total masses then gives
+$d_3=-(d_1+d_2)\geq0$.
+If $d_2\geq0$, choose $c=1$; otherwise choose $c=2$.
+In either case \eqref{eq:crossing} follows, including zero masses
+outside $\{1,2,3\}$.
+For coupon collection the support is contained in
+$\{1,\ldots,\min(N,n)\}$, and ordinary stochastic dominance follows
+from Wong and Yue \cite[pp.~391--398]{wongyue}, also restated in
+\cite[Corollary~6.1 and Remark~6.1, pp.~25--26]{zoroa}.
+\end{proof}
+Thus at least four labels and four possible distinct counts are needed
+for a counterexample. Theorem~\ref{thm:alln} covers every $n\geq5$;
+the case $n=4$, $N>5$ is not determined here.
+
+\begin{center}
+\begin{tabular}{p{.47\linewidth}p{.44\linewidth}}
+\toprule
+Source item in \cite{zoroa} & Coverage\\
+\midrule
+\S8, Conjecture, p.~30 & Refuted (explicit counterexamples),
+Theorems~\ref{thm:counterexample}, \ref{thm:alln} and Corollary~\ref{cor:allN}.\\
+\S8, $n=2,3$ for arbitrary $N$, p.~30 &
+Reproved; prior proof Zoroa et al. (2016), deduced in Lemma~\ref{lem:three}.\\
+\S8, $n=4$, $N\leq5$, p.~30 &
+Reported there as proved, without a proof in that passage;
+not covered here beyond $N\leq3$.\\
+Corollary~6.1, p.~25 &
+Prior proof: Wong and Yue (1973) \cite[pp.~391--398]{wongyue},
+credited in \cite[Remark~6.1, pp.~25--26]{zoroa};
+ordinary stochastic order retained.\\
+Extension to $n\geq5$, $N\geq4$ &
+Not posed; proved in Theorem~\ref{thm:alln} and Corollary~\ref{cor:allN}.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{Verification coverage.}
+The declaration \texttt{result : $\neg$ claim} in the
+\href{https://github.com/the-omega-institute/trureturing/blob/ad59550e53d607f9e9dbd8110a79414c46e97f7e/D5/S3/Analytic/Probability/StrongDominanceRefutation.lean}{pinned Lean source}
+proves \texttt{not claim} from the vectors of
+Theorem~\ref{thm:counterexample} at $N=4$, $n=5$ only.
+It formalizes their decreasing-prefix inequalities and the four mass
+values $a_p(2)$, $a_q(2)$, $a_p(3)$ and $a_q(3)$.
+The masses at $k=1,4$, the displayed cumulative differences,
+Corollaries~\ref{cor:family} and \ref{cor:allN}, and
+Theorem~\ref{thm:alln} have written proofs and script checks only;
+they are outside this declaration's scope.
+The inclusion--exclusion formulas and Lemma~\ref{lem:three} have written
+proofs. The accompanying \texttt{verify.py} checks the concrete
+mass table, the exact family polynomials and interval bounds, and the
+coefficient weights and derivative constants in the all-$n$ proof.
+Finite endpoint checks are distinguished from the all-$n$ proof in
+\texttt{verification.json}.
+
+\begin{thebibliography}{9}
+\bibitem{wongyue}
+C.~K.~Wong and P.~C.~Yue,
+\emph{A majorization theorem for the number of distinct outcomes in
+$n$ independent trials}, Discrete Mathematics \textbf{6} (1973),
+391--398.
+\href{https://doi.org/10.1016/0012-365X(73)90070-8}{doi:10.1016/0012-365X(73)90070-8}.
+\bibitem{zoroa}
+N.~Zoroa, E.~Lesigne, M.~J.~Fern\'andez-S\'aez, P.~Zoroa and J.~Casas,
+\emph{The coupon collector urn model with unequal probabilities in ecology
+and evolution}, Journal of the Royal Society Interface \textbf{14} (2017),
+20160643. \href{https://doi.org/10.1098/rsif.2016.0643}{doi:10.1098/rsif.2016.0643}.
+Posing version: \href{https://arxiv.org/abs/1608.00155v1}{arXiv:1608.00155v1}
+(2016), \S8, pp.~28--30.
+\bibitem{anceaume}
+E.~Anceaume, Y.~Busnel, E.~Schulte-Geers and B.~Sericola,
+\emph{Optimization results for a generalized coupon collector problem},
+Journal of Applied Probability \textbf{53} (2016), 622--629.
+\href{https://doi.org/10.1017/jpr.2016.27}{doi:10.1017/jpr.2016.27}.
+Author version: \href{https://arxiv.org/abs/1504.03878v1}{arXiv:1504.03878v1}, Theorem~1.
+\bibitem{lesigne}
+E.~Lesigne, \emph{Collection de vignettes in\'egalement distribu\'ees ou
+quand l'h\'et\'erog\'en\'eit\'e est une protection},
+\href{https://hal.science/hal-05746525v1}{HAL:hal-05746525v1} (2026),
+\S4, p.~5 and \S7, pp.~9--11.
+\end{thebibliography}
+\noindent\footnotesize Copyright \copyright\ 2026 Haobo Ma and Wenlin Zhang. License: CC BY 4.0.
+\end{document}

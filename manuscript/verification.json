@@ -1,0 +1,347 @@
+{
+  "all_draw_counts": {
+    "all_dimensions": "For N > 4 put M=N-4, delta=min(margin/(4*n),M*t/4,1/4); scale the four coordinates by 1-delta and append M coordinates delta/M. Each mass difference changes by at most 2*n*delta <= margin/2.",
+    "common_positive_margin": "n*(n-1)*2^(-n)*t^2",
+    "coverage": "Exact coefficient weights and derivative-bound constants in the written all-n Taylor proof; endpoint controls for n=5,...,20 and nine enlarged-vector pairs are finite checks, not the all-n or all-N proofs.",
+    "domain": "Every integer n >= 5 and every real 0 < t <= 1/(100*n*2^n)",
+    "exact_endpoint_controls": [
+      {
+        "common_margin": "n*(n-1)*2^(-n)*t^2",
+        "draws": 5,
+        "parameter": "1/(100*n*2^n)"
+      },
+      {
+        "common_margin": "n*(n-1)*2^(-n)*t^2",
+        "draws": 6,
+        "parameter": "1/(100*n*2^n)"
+      },
+      {
+        "common_margin": "n*(n-1)*2^(-n)*t^2",
+        "draws": 7,
+        "parameter": "1/(100*n*2^n)"
+      },
+      {
+        "common_margin": "n*(n-1)*2^(-n)*t^2",
+        "draws": 8,
+        "parameter": "1/(100*n*2^n)"
+      },
+      {
+        "common_margin": "n*(n-1)*2^(-n)*t^2",
+        "draws": 9,
+        "parameter": "1/(100*n*2^n)"
+      },
+      {
+        "common_margin": "n*(n-1)*2^(-n)*t^2",
+        "draws": 10,
+        "parameter": "1/(100*n*2^n)"
+      },
+      {
+        "common_margin": "n*(n-1)*2^(-n)*t^2",
+        "draws": 11,
+        "parameter": "1/(100*n*2^n)"
+      },
+      {
+        "common_margin": "n*(n-1)*2^(-n)*t^2",
+        "draws": 12,
+        "parameter": "1/(100*n*2^n)"
+      },
+      {
+        "common_margin": "n*(n-1)*2^(-n)*t^2",
+        "draws": 13,
+        "parameter": "1/(100*n*2^n)"
+      },
+      {
+        "common_margin": "n*(n-1)*2^(-n)*t^2",
+        "draws": 14,
+        "parameter": "1/(100*n*2^n)"
+      },
+      {
+        "common_margin": "n*(n-1)*2^(-n)*t^2",
+        "draws": 15,
+        "parameter": "1/(100*n*2^n)"
+      },
+      {
+        "common_margin": "n*(n-1)*2^(-n)*t^2",
+        "draws": 16,
+        "parameter": "1/(100*n*2^n)"
+      },
+      {
+        "common_margin": "n*(n-1)*2^(-n)*t^2",
+        "draws": 17,
+        "parameter": "1/(100*n*2^n)"
+      },
+      {
+        "common_margin": "n*(n-1)*2^(-n)*t^2",
+        "draws": 18,
+        "parameter": "1/(100*n*2^n)"
+      },
+      {
+        "common_margin": "n*(n-1)*2^(-n)*t^2",
+        "draws": 19,
+        "parameter": "1/(100*n*2^n)"
+      },
+      {
+        "common_margin": "n*(n-1)*2^(-n)*t^2",
+        "draws": 20,
+        "parameter": "1/(100*n*2^n)"
+      }
+    ],
+    "exact_extension_controls": [
+      {
+        "draws": 5,
+        "extra_mass": "min(margin/(4*n),(N-4)*t/4,1/4)",
+        "labels": 5
+      },
+      {
+        "draws": 5,
+        "extra_mass": "min(margin/(4*n),(N-4)*t/4,1/4)",
+        "labels": 6
+      },
+      {
+        "draws": 5,
+        "extra_mass": "min(margin/(4*n),(N-4)*t/4,1/4)",
+        "labels": 8
+      },
+      {
+        "draws": 6,
+        "extra_mass": "min(margin/(4*n),(N-4)*t/4,1/4)",
+        "labels": 5
+      },
+      {
+        "draws": 6,
+        "extra_mass": "min(margin/(4*n),(N-4)*t/4,1/4)",
+        "labels": 6
+      },
+      {
+        "draws": 6,
+        "extra_mass": "min(margin/(4*n),(N-4)*t/4,1/4)",
+        "labels": 8
+      },
+      {
+        "draws": 10,
+        "extra_mass": "min(margin/(4*n),(N-4)*t/4,1/4)",
+        "labels": 5
+      },
+      {
+        "draws": 10,
+        "extra_mass": "min(margin/(4*n),(N-4)*t/4,1/4)",
+        "labels": 6
+      },
+      {
+        "draws": 10,
+        "extra_mass": "min(margin/(4*n),(N-4)*t/4,1/4)",
+        "labels": 8
+      }
+    ],
+    "quadratic_coefficients": {
+      "k2": "n*(n-1)*2^(3-n)",
+      "k3": "n*(n-1)*(2^(4-n)-1)"
+    },
+    "second_coefficient_base_weights": {
+      "2": {
+        "0": 6,
+        "1": 0,
+        "1/2": 4
+      },
+      "3": {
+        "0": -6,
+        "1": -2,
+        "1/2": 8
+      }
+    },
+    "third_derivative_absolute_slope_cube_sums": {
+      "2": 684,
+      "3": 1120
+    },
+    "third_order_remainder_constants": {
+      "k2": "114",
+      "k3": "560/3"
+    }
+  },
+  "arithmetic": "Exact integer witness numerators and rational polynomial arithmetic; no floating-point rounding",
+  "checks": "pass",
+  "claim": "The two mass inequalities at counts 2 and 3 exclude every real single-crossing threshold.",
+  "coverage": "All five masses, all decreasing-prefix sums, normalization, positivity and cumulative order for these two vectors.",
+  "cumulative_difference_numerators_k0_through_k4": [
+    0,
+    -8855220,
+    -7330560,
+    -13896000,
+    0
+  ],
+  "denominator": 10000000000,
+  "difference_numerators_k0_through_k4": [
+    0,
+    -8855220,
+    1524660,
+    -6565440,
+    13896000
+  ],
+  "draws": 5,
+  "family": {
+    "coordinate_coefficients_in_ascending_order": {
+      "p": [
+        [
+          "1/2",
+          "-2"
+        ],
+        [
+          "1/2",
+          "-2"
+        ],
+        [
+          "0",
+          "2"
+        ],
+        [
+          "0",
+          "2"
+        ]
+      ],
+      "q": [
+        [
+          "1/2"
+        ],
+        [
+          "1/2",
+          "-4"
+        ],
+        [
+          "0",
+          "3"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ]
+    },
+    "coverage": "Exact polynomial identities and rational coefficientwise interval bounds on the full real interval",
+    "mass_difference_coefficients_in_ascending_order_k0_through_k4": [
+      [
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "-10",
+        "120",
+        "-560",
+        "780"
+      ],
+      [
+        "0",
+        "0",
+        "5",
+        "-360",
+        "1270",
+        "-2340"
+      ],
+      [
+        "0",
+        "0",
+        "-10",
+        "360",
+        "-1670",
+        "1560"
+      ],
+      [
+        "0",
+        "0",
+        "15",
+        "-120",
+        "960"
+      ]
+    ],
+    "mass_difference_divided_by_t_squared_enclosures": {
+      "1": [
+        "-1257/125",
+        "-439961/50000"
+      ],
+      "2": [
+        "69883/50000",
+        "5127/1000"
+      ],
+      "3": [
+        "-10167/1000",
+        "-159961/25000"
+      ],
+      "4": [
+        "69/5",
+        "1887/125"
+      ]
+    },
+    "parameter_interval": "0 < t <= 1/100, for every real t",
+    "signs_k1_through_k4": [
+      "negative",
+      "positive",
+      "negative",
+      "positive"
+    ]
+  },
+  "labels": 4,
+  "mass_numerators_k0_through_k4": {
+    "p": [
+      0,
+      509608000,
+      7874904000,
+      1560192000,
+      55296000
+    ],
+    "q": [
+      0,
+      518463220,
+      7873379340,
+      1566757440,
+      41400000
+    ]
+  },
+  "methods": [
+    "weighted enumeration",
+    "subset inclusion-exclusion",
+    "multinomial count enumeration"
+  ],
+  "occupancy_vectors_per_vector": 56,
+  "prefix_sum_numerators": {
+    "p": [
+      48,
+      96,
+      98,
+      100
+    ],
+    "q": [
+      50,
+      96,
+      99,
+      100
+    ]
+  },
+  "schema_version": 1,
+  "subset_power_sum_numerators_j1_through_j3": {
+    "p": [
+      509608000,
+      9403728000,
+      18838824000
+    ],
+    "q": [
+      518463220,
+      9428769000,
+      18868905780
+    ]
+  },
+  "vector_numerators": {
+    "p": [
+      48,
+      48,
+      2,
+      2
+    ],
+    "q": [
+      50,
+      46,
+      3,
+      1
+    ]
+  },
+  "words_per_vector": 1024
+}

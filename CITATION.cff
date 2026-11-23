@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this work, cite it."
+title: "Counterexamples to Zoroa et al.'s strong-dominance conjecture for every number of draws above four"
+authors:
+  - name: "Haobo Ma"
+  - name: "Wenlin Zhang"
+date-released: "2026-11-23"
+version: "3"
+url: "https://mathesis-omega-research.apps.chrono-ai.fun/papers/zoroa-strong-dominance-counterexample?version=3"
+license: "CC-BY-4.0"

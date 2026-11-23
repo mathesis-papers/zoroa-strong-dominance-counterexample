@@ -1,0 +1,199 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:zoroa-strong-dominance-counterexample:3:s1",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "ad59550e53d607f9e9dbd8110a79414c46e97f7e",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/ad59550e53d607f9e9dbd8110a79414c46e97f7e/D5/S3/Analytic/Probability/StrongDominanceRefutation.lean"
+      },
+      "lineage": "collected:zoroa-strong-dominance-counterexample:s1",
+      "macros": {
+        "\\Prob": "\\mathbb P"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "zoroa-strong-dominance-counterexample",
+      "scope": "in_scope",
+      "statement": "For $N=4$, $n=5$ and\n\\[\n p=\\frac1{100}(48,48,2,2),\\qquad\n q=\\frac1{100}(50,46,3,1),\n\\]\nall coordinates are positive and $p\\prec q$, but\n\\eqref{eq:crossing} fails for every $c\\in\\mathbb R$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Counterexamples to Zoroa et al.'s strong-dominance conjecture for every number of draws above four",
+      "toolchain": null,
+      "version": 3,
+      "work": "zoroa-strong-dominance-counterexample"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:zoroa-strong-dominance-counterexample:3:s2",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "ad59550e53d607f9e9dbd8110a79414c46e97f7e",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/ad59550e53d607f9e9dbd8110a79414c46e97f7e/D5/S3/Analytic/Probability/StrongDominanceRefutation.lean"
+      },
+      "lineage": "collected:zoroa-strong-dominance-counterexample:s2",
+      "macros": {
+        "\\Prob": "\\mathbb P"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "zoroa-strong-dominance-counterexample",
+      "scope": "in_scope",
+      "statement": "For every real $0<t\\leq1/100$, the positive probability vectors\n\\[\n p_t=(1/2-2t,1/2-2t,2t,2t),\\qquad\n q_t=(1/2,1/2-4t,3t,t)\n\\]\nsatisfy $p_t\\prec q_t$ and fail \\eqref{eq:crossing} after five draws.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Counterexamples to Zoroa et al.'s strong-dominance conjecture for every number of draws above four",
+      "toolchain": null,
+      "version": 3,
+      "work": "zoroa-strong-dominance-counterexample"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:zoroa-strong-dominance-counterexample:3:s3",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "ad59550e53d607f9e9dbd8110a79414c46e97f7e",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/ad59550e53d607f9e9dbd8110a79414c46e97f7e/D5/S3/Analytic/Probability/StrongDominanceRefutation.lean"
+      },
+      "lineage": "collected:zoroa-strong-dominance-counterexample:s3",
+      "macros": {
+        "\\Prob": "\\mathbb P"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "zoroa-strong-dominance-counterexample",
+      "scope": "in_scope",
+      "statement": "For every integer $n\\geq5$ and every real\n$0<t\\leq (100n2^n)^{-1}$, the strictly positive four-coordinate vectors\n$p_t,q_t$ of Corollary~\\ref{cor:family} satisfy $p_t\\prec q_t$ and\n\\[\n a_{p_t}(2)-a_{q_t}(2)>0,\\qquad\n a_{p_t}(3)-a_{q_t}(3)<0.\n\\]\nIn particular they fail the single-crossing condition after $n$ draws.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Counterexamples to Zoroa et al.'s strong-dominance conjecture for every number of draws above four",
+      "toolchain": null,
+      "version": 3,
+      "work": "zoroa-strong-dominance-counterexample"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:zoroa-strong-dominance-counterexample:3:s4",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "ad59550e53d607f9e9dbd8110a79414c46e97f7e",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/ad59550e53d607f9e9dbd8110a79414c46e97f7e/D5/S3/Analytic/Probability/StrongDominanceRefutation.lean"
+      },
+      "lineage": "collected:zoroa-strong-dominance-counterexample:s4",
+      "macros": {
+        "\\Prob": "\\mathbb P"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "zoroa-strong-dominance-counterexample",
+      "scope": "in_scope",
+      "statement": "For every pair of integers $N\\geq4$ and $n\\geq5$, there are strictly\npositive rational probability vectors $p\\prec q$ on $N$ labels for which\nthe single-crossing condition fails after $n$ draws.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Counterexamples to Zoroa et al.'s strong-dominance conjecture for every number of draws above four",
+      "toolchain": null,
+      "version": 3,
+      "work": "zoroa-strong-dominance-counterexample"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:zoroa-strong-dominance-counterexample:3:s5",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "ad59550e53d607f9e9dbd8110a79414c46e97f7e",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/ad59550e53d607f9e9dbd8110a79414c46e97f7e/D5/S3/Analytic/Probability/StrongDominanceRefutation.lean"
+      },
+      "lineage": "collected:zoroa-strong-dominance-counterexample:s5",
+      "macros": {
+        "\\Prob": "\\mathbb P"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "zoroa-strong-dominance-counterexample",
+      "scope": "in_scope",
+      "statement": "For distributions supported on $\\{1,2,3\\}$, ordinary stochastic\ndominance implies the single-crossing condition \\eqref{eq:crossing}.\nConsequently, for coupon collection, the conjectured conclusion holds\nwhenever $\\min(N,n)\\leq3$ and $p\\prec q$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Counterexamples to Zoroa et al.'s strong-dominance conjecture for every number of draws above four",
+      "toolchain": null,
+      "version": 3,
+      "work": "zoroa-strong-dominance-counterexample"
+    }
+  ]
+}

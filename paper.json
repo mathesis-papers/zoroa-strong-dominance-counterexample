@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 77249,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "38bae138ba3f35b114b1f536b737a49d3b3e5f1520c9aa58c3fe964583c68920",
+      "sha256": "38bae138ba3f35b114b1f536b737a49d3b3e5f1520c9aa58c3fe964583c68920"
+    },
+    "source": {
+      "bytes": 16040,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "5bc586e67249ed8cbf9483f7f3debd4229bb28c70386cd5c065f3d9e3c9bbe40",
+      "sha256": "5bc586e67249ed8cbf9483f7f3debd4229bb28c70386cd5c065f3d9e3c9bbe40"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "We refute the strong-dominance conjecture of Zoroa, Lesigne, Fernández-Sáez, Zoroa and Casas (arXiv:1608.00155v1, Section 8, Conjecture, page 30) for every number of labels N≥4 and every number of independent draws n≥5, with strictly positive rational coupon probabilities. For n=5 and p=(48,48,2,2)/100 and q=(50,46,3,1)/100, one has p≺q, but the probability mass under p is larger at two distinct labels and smaller at three distinct labels. These two inequalities exclude every real single-crossing threshold. The obstruction persists along a rational one-parameter family on a full real interval. A Taylor estimate extends it to every number of draws n≥5, and adding sufficiently rare labels gives strictly positive counterexamples in every dimension N≥4. The cumulative distributions retain the usual stochastic order. On supports of at most three distinct counts, that order implies the conjectured conclusion.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 3,
+    "doi": null,
+    "lean_source": {
+      "revision": "ad59550e53d607f9e9dbd8110a79414c46e97f7e",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/ad59550e53d607f9e9dbd8110a79414c46e97f7e/D5/S3/Analytic/Probability/StrongDominanceRefutation.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 77249,
+      "sha256": "38bae138ba3f35b114b1f536b737a49d3b3e5f1520c9aa58c3fe964583c68920",
+      "url": "/api/v1/collected-papers/zoroa-strong-dominance-counterexample/files/pdf?version=3"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-23T18:48:40.945299139Z",
+    "record": "zoroa-strong-dominance-counterexample",
+    "repository_name": "zoroa-strong-dominance-counterexample",
+    "source": {
+      "bytes": 16040,
+      "sha256": "5bc586e67249ed8cbf9483f7f3debd4229bb28c70386cd5c065f3d9e3c9bbe40",
+      "url": "/api/v1/collected-papers/zoroa-strong-dominance-counterexample/files/source?version=3"
+    },
+    "title": "Counterexamples to Zoroa et al.'s strong-dominance conjecture for every number of draws above four",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-23T18:48:40.945299139Z",
+        "revision": "3",
+        "version": 3
+      }
+    ],
+    "work": "zoroa-strong-dominance-counterexample"
+  }
+}
