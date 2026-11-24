@@ -25,7 +25,7 @@
       "macros": {
         "\\Prob": "\\mathbb P"
       },
-      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "next_step": "Formalization work is coordinated through the shared requests.",
       "proof_basis": null,
       "proof_state": "preparing",
       "receipt": null,
@@ -64,7 +64,7 @@
       "macros": {
         "\\Prob": "\\mathbb P"
       },
-      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "next_step": "Formalization work is coordinated through the shared requests.",
       "proof_basis": null,
       "proof_state": "preparing",
       "receipt": null,
@@ -103,7 +103,7 @@
       "macros": {
         "\\Prob": "\\mathbb P"
       },
-      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "next_step": "Formalization work is coordinated through the shared requests.",
       "proof_basis": null,
       "proof_state": "preparing",
       "receipt": null,
@@ -142,7 +142,7 @@
       "macros": {
         "\\Prob": "\\mathbb P"
       },
-      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "next_step": "Formalization work is coordinated through the shared requests.",
       "proof_basis": null,
       "proof_state": "preparing",
       "receipt": null,
@@ -181,7 +181,7 @@
       "macros": {
         "\\Prob": "\\mathbb P"
       },
-      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "next_step": "Formalization work is coordinated through the shared requests.",
       "proof_basis": null,
       "proof_state": "preparing",
       "receipt": null,
