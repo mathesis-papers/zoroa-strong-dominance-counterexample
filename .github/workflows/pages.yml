@@ -57,7 +57,10 @@ jobs:
           done
           echo 'Uploaded paper artifact did not become visible within 90 seconds' >&2
           exit 1
-      - uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+      - name: Deploy this exact artifact through the Pages REST API
         id: deployment
-        with:
-          artifact_name: paper-${{ github.run_id }}-${{ github.run_attempt }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ARTIFACT_ID: ${{ steps.upload.outputs.artifact_id }}
+          ARTIFACT_NAME: paper-${{ github.run_id }}-${{ github.run_attempt }}
+        run: python3 .mathesis/deploy-pages.py
