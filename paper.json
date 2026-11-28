@@ -31,6 +31,7 @@
     "concept_doi": "10.5281/zenodo.24477883",
     "current_version": 3,
     "doi": "10.5281/zenodo.24477884",
+    "kind": "note",
     "lean_source": {
       "revision": "ad59550e53d607f9e9dbd8110a79414c46e97f7e",
       "url": "https://github.com/the-omega-institute/trureturing/blob/ad59550e53d607f9e9dbd8110a79414c46e97f7e/D5/S3/Analytic/Probability/StrongDominanceRefutation.lean"
@@ -55,10 +56,12 @@
     "title": "Counterexamples to Zoroa et al.'s strong-dominance conjecture for every number of draws above four",
     "versions": [
       {
+        "changelog": null,
         "previous_version": null,
         "published_on": "2026-11-23T18:48:40.945299139Z",
         "revision": "3",
-        "version": 3
+        "version": 3,
+        "version_label": null
       }
     ],
     "work": "zoroa-strong-dominance-counterexample"
